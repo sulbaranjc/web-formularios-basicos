@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Campos en Formularios HTML</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <form class="form-tipos-inputs">
+        <h1>Ejemplo de Tipos de Campos en Formularios HTML</h1>
+        <!-- Ejemplo representativo para cada tipo de input -->
+        <div class="input-demo">
+            <label for="text">Nombre completo</label>
+            <input type="text" id="text" name="text" placeholder="Ej: Juan Pérez">
+            <div class="input-tooltip">
+                <strong>type="text"</strong><br>
+                Campo de texto de una sola línea. Se usa para nombres, títulos, ciudades, etc.
+            </div>
+            <small>Ejemplo: Ingresar tu nombre completo.</small>
+        </div>
+        <div class="input-demo">
+            <label for="password">Contraseña de acceso</label>
+            <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres">
+            <div class="input-tooltip">
+                <strong>type="password"</strong><br>
+                Oculta los caracteres ingresados. Ideal para contraseñas y datos sensibles.
+            </div>
+            <small>Ejemplo: Crear una contraseña segura.</small>
+        </div>
+        <div class="input-demo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+            <div class="input-tooltip">
+                <strong>type="email"</strong><br>
+                Valida que el formato sea de correo electrónico. Útil para registros y contactos.
+            </div>
+            <small>Ejemplo: Ingresar tu email para recibir notificaciones.</small>
+        </div>
+        <div class="input-demo">
+            <label for="number">Edad</label>
+            <input type="number" id="number" name="number" min="0" max="120" placeholder="Ej: 25">
+            <div class="input-tooltip">
+                <strong>type="number"</strong><br>
+                Permite solo números. Se usa para cantidades, edades, precios, etc.
+            </div>
+            <small>Ejemplo: Indicar tu edad.</small>
+        </div>
+        <div class="input-demo">
+            <label for="tel">Teléfono de contacto</label>
+            <input type="tel" id="tel" name="tel" placeholder="Ej: 0414-1234567">
+            <div class="input-tooltip">
+                <strong>type="tel"</strong><br>
+                Campo para números telefónicos. Muestra teclado numérico en móviles.
+            </div>
+            <small>Ejemplo: Ingresar tu número de teléfono.</small>
+        </div>
+        <div class="input-demo">
+            <label for="url">Sitio web personal</label>
+            <input type="url" id="url" name="url" placeholder="https://tusitio.com">
+            <div class="input-tooltip">
+                <strong>type="url"</strong><br>
+                Valida que el texto sea una dirección web válida. Útil para portafolios, redes, etc.
+            </div>
+            <small>Ejemplo: Compartir tu página web.</small>
+        </div>
+        <div class="input-demo">
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" id="date" name="date">
+            <div class="input-tooltip">
+                <strong>type="date"</strong><br>
+                Permite seleccionar una fecha desde un calendario. Útil para cumpleaños, reservas, etc.
+            </div>
+            <small>Ejemplo: Seleccionar tu fecha de nacimiento.</small>
+        </div>
+        <div class="input-demo">
+            <label for="time">Hora de la cita</label>
+            <input type="time" id="time" name="time">
+            <div class="input-tooltip">
+                <strong>type="time"</strong><br>
+                Permite seleccionar una hora. Útil para agendar reuniones o recordatorios.
+            </div>
+            <small>Ejemplo: Indicar la hora de tu cita.</small>
+        </div>
+        <div class="input-demo">
+            <label for="color">Color favorito</label>
+            <input type="color" id="color" name="color" value="#ff0000">
+            <div class="input-tooltip">
+                <strong>type="color"</strong><br>
+                Permite elegir un color usando un selector visual. Útil para personalización.
+            </div>
+            <small>Ejemplo: Seleccionar tu color favorito.</small>
+        </div>
+        <div class="input-demo">
+            <label for="range">Nivel de satisfacción</label>
+            <input type="range" id="range" name="range" min="0" max="10" value="5">
+            <div class="input-tooltip">
+                <strong>type="range"</strong><br>
+                Permite seleccionar un valor dentro de un rango definido. Útil para encuestas.
+            </div>
+            <small>Ejemplo: Califica tu experiencia del 0 al 10.</small>
+        </div>
+        <div class="input-demo">
+            <label for="file">Subir foto de perfil</label>
+            <input type="file" id="file" name="file" accept="image/*">
+            <div class="input-tooltip">
+                <strong>type="file"</strong><br>
+                Permite seleccionar y subir archivos desde el dispositivo. Útil para imágenes, documentos, etc.
+            </div>
+            <small>Ejemplo: Adjuntar una foto de perfil.</small>
+        </div>
+        <div class="input-demo">
+            <label>Género</label>
+            <input type="radio" id="radio1" name="genero" value="masculino">
+            <label for="radio1">Masculino</label>
+            <input type="radio" id="radio2" name="genero" value="femenino">
+            <label for="radio2">Femenino</label>
+            <div class="input-tooltip">
+                <strong>type="radio"</strong><br>
+                Permite seleccionar solo una opción entre varias. Útil para elegir género, opciones únicas, etc.
+            </div>
+            <small>Ejemplo: Seleccionar tu género.</small>
+        </div>
+        <div class="input-demo">
+            <label for="checkbox">Acepto los términos</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <div class="input-tooltip">
+                <strong>type="checkbox"</strong><br>
+                Permite seleccionar o deseleccionar una opción. Útil para aceptar condiciones, suscripciones, etc.
+            </div>
+            <small>Ejemplo: Marcar si aceptas los términos y condiciones.</small>
+        </div>
+        <div class="input-demo">
+            <label for="hidden">ID de usuario (oculto)</label>
+            <input type="hidden" id="hidden" name="hidden" value="12345">
+            <div class="input-tooltip">
+                <strong>type="hidden"</strong><br>
+                No se muestra al usuario, pero se envía con el formulario. Útil para IDs, tokens, etc.
+            </div>
+            <small>Ejemplo: El usuario no ve este campo, pero el servidor sí lo recibe.</small>
+        </div>
+        <div class="input-demo">
+            <label for="search">Buscar producto</label>
+            <input type="search" id="search" name="search" placeholder="Buscar...">
+            <div class="input-tooltip">
+                <strong>type="search"</strong><br>
+                Campo optimizado para búsquedas. Puede mostrar una X para limpiar.
+            </div>
+            <small>Ejemplo: Buscar un producto en una tienda.</small>
+        </div>
+        <div class="input-demo">
+            <label for="datetime-local">Fecha y hora del evento</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local">
+            <div class="input-tooltip">
+                <strong>type="datetime-local"</strong><br>
+                Permite seleccionar fecha y hora (sin zona horaria). Útil para eventos, reservas, etc.
+            </div>
+            <small>Ejemplo: Indicar cuándo será el evento.</small>
+        </div>
+        <div class="input-demo">
+            <label for="month">Mes de inicio</label>
+            <input type="month" id="month" name="month">
+            <div class="input-tooltip">
+                <strong>type="month"</strong><br>
+                Permite seleccionar un mes y año. Útil para periodos escolares, facturación, etc.
+            </div>
+            <small>Ejemplo: Seleccionar el mes de inicio de clases.</small>
+        </div>
+        <div class="input-demo">
+            <label for="week">Semana de entrega</label>
+            <input type="week" id="week" name="week">
+            <div class="input-tooltip">
+                <strong>type="week"</strong><br>
+                Permite seleccionar una semana específica del año. Útil para planificaciones.
+            </div>
+            <small>Ejemplo: Indicar la semana de entrega de un proyecto.</small>
+        </div>
+        <div class="input-demo">
+            <label for="textarea">Comentarios</label>
+            <textarea id="textarea" name="textarea" placeholder="Escribe tus comentarios aquí..."></textarea>
+            <div class="input-tooltip">
+                <strong>&lt;textarea&gt;</strong><br>
+                Campo de texto de varias líneas. Útil para comentarios, descripciones largas, etc.
+            </div>
+            <small>Ejemplo: Dejar una sugerencia o comentario.</small>
+        </div>
+        <div class="input-demo">
+            <label for="select">País de residencia</label>
+            <select id="select" name="select">
+                <option value="">Selecciona un país</option>
+                <option value="ve">Venezuela</option>
+                <option value="co">Colombia</option>
+                <option value="ar">Argentina</option>
+            </select>
+            <div class="input-tooltip">
+                <strong>&lt;select&gt;</strong><br>
+                Permite seleccionar una opción de una lista desplegable. Útil para países, ciudades, categorías, etc.
+            </div>
+            <small>Ejemplo: Elegir tu país de residencia.</small>
+        </div>
+        <div class="input-demo">
+            <label for="button">Botón de ayuda</label>
+            <input type="button" id="button" value="¿Necesitas ayuda?" onclick="alert('¡Aquí tienes ayuda!')">
+            <div class="input-tooltip">
+                <strong>type="button"</strong><br>
+                Botón que no envía el formulario. Se usa para acciones personalizadas con JavaScript.
+            </div>
+            <small>Ejemplo: Mostrar un mensaje de ayuda.</small>
+        </div>
+        <div class="input-demo">
+            <label for="submit">Enviar formulario</label>
+            <input type="submit" id="submit" value="Enviar">
+            <div class="input-tooltip">
+                <strong>type="submit"</strong><br>
+                Envía el formulario al servidor. Útil para finalizar el registro, compra, etc.
+            </div>
+            <small>Ejemplo: Enviar los datos ingresados.</small>
+        </div>
+        <div class="input-demo">
+            <label for="reset">Limpiar formulario</label>
+            <input type="reset" id="reset" value="Restablecer">
+            <div class="input-tooltip">
+                <strong>type="reset"</strong><br>
+                Restablece todos los campos del formulario a su valor inicial. Útil para limpiar datos.
+            </div>
+            <small>Ejemplo: Borrar todos los campos y empezar de nuevo.</small>
+        </div>
+    </form>
+    <p><a href="index.html">Volver al inicio</a></p>
+</body>
+</html>

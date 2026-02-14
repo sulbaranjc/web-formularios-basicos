@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción al Gimnasio</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <form class="form-tipos-inputs">
+        <h1>Formulario de Inscripción al Gimnasio</h1>
+        <div class="input-demo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Gómez" required>
+            <small>Campo de texto para el nombre del usuario.</small>
+        </div>
+        <div class="input-demo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <small>Para notificaciones y acceso a la app.</small>
+        </div>
+        <div class="input-demo">
+            <label for="password">Contraseña de acceso</label>
+            <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required>
+            <small>Para tu cuenta en el sistema.</small>
+        </div>
+        <div class="input-demo">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="12" max="99" placeholder="Ej: 25" required>
+            <small>Solo números. Edad mínima 12 años.</small>
+        </div>
+        <div class="input-demo">
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 0414-1234567">
+            <small>Para emergencias o avisos importantes.</small>
+        </div>
+        <div class="input-demo">
+            <label for="web">Sitio web personal (opcional)</label>
+            <input type="url" id="web" name="web" placeholder="https://tusitio.com">
+            <small>Si tienes un blog o portafolio.</small>
+        </div>
+        <div class="input-demo">
+            <label for="fecha-nac">Fecha de nacimiento</label>
+            <input type="date" id="fecha-nac" name="fecha-nac" required>
+            <small>Para validar tu edad.</small>
+        </div>
+        <div class="input-demo">
+            <label for="hora-entrenamiento">Hora preferida de entrenamiento</label>
+            <input type="time" id="hora-entrenamiento" name="hora-entrenamiento">
+            <small>Selecciona la hora que prefieres entrenar.</small>
+        </div>
+        <div class="input-demo">
+            <label for="color">Color favorito para tu perfil</label>
+            <input type="color" id="color" name="color" value="#00bfff">
+            <small>Personaliza tu perfil.</small>
+        </div>
+        <div class="input-demo">
+            <label for="nivel">Nivel de experiencia (0: Novato, 10: Pro)</label>
+            <input type="range" id="nivel" name="nivel" min="0" max="10" value="5">
+            <small>Selecciona tu nivel actual.</small>
+        </div>
+        <div class="input-demo">
+            <label for="foto">Foto de perfil</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <small>Sube una imagen para tu perfil.</small>
+        </div>
+        <div class="input-demo">
+            <label>Género</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">Otro</label>
+            <small>Selecciona tu género.</small>
+        </div>
+        <div class="input-demo">
+            <label for="acepto">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <small>Debes aceptar para inscribirte.</small>
+        </div>
+        <div class="input-demo">
+            <input type="hidden" id="codigo-promocional" name="codigo-promocional" value="GYM2026">
+            <small>Código promocional oculto para ofertas especiales.</small>
+        </div>
+        <div class="input-demo">
+            <label for="busqueda">¿Cómo nos encontraste?</label>
+            <input type="search" id="busqueda" name="busqueda" placeholder="Buscar...">
+            <small>Ejemplo: Google, Instagram, recomendación, etc.</small>
+        </div>
+        <div class="input-demo">
+            <label for="fecha-inscripcion">Fecha y hora de inscripción</label>
+            <input type="datetime-local" id="fecha-inscripcion" name="fecha-inscripcion">
+            <small>Para registro administrativo.</small>
+        </div>
+        <div class="input-demo">
+            <label for="mes-inicio">Mes de inicio</label>
+            <input type="month" id="mes-inicio" name="mes-inicio">
+            <small>¿En qué mes comienzas?</small>
+        </div>
+        <div class="input-demo">
+            <label for="semana-inicio">Semana de inicio</label>
+            <input type="week" id="semana-inicio" name="semana-inicio">
+            <small>¿En qué semana te unes?</small>
+        </div>
+        <div class="input-demo">
+            <label for="objetivos">Objetivos de entrenamiento</label>
+            <textarea id="objetivos" name="objetivos" placeholder="Describe tus metas..." rows="3"></textarea>
+            <small>Cuéntanos tus objetivos principales.</small>
+        </div>
+        <div class="input-demo">
+            <label for="pais">País de residencia</label>
+            <select id="pais" name="pais" required>
+                <option value="">Selecciona un país</option>
+                <option value="ve">Venezuela</option>
+                <option value="co">Colombia</option>
+                <option value="ar">Argentina</option>
+                <option value="mx">México</option>
+            </select>
+            <small>Selecciona tu país.</small>
+        </div>
+        <div class="input-demo">
+            <input type="button" value="¿Necesitas ayuda?" onclick="alert('Comunícate con nuestro equipo de soporte: soporte@gym.com')">
+            <small>Botón de ayuda rápida.</small>
+        </div>
+        <div class="input-demo">
+            <input type="submit" value="Inscribirme">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+    <p style="text-align:center;"><a href="../index.html">Volver al inicio</a></p>
+</body>
+</html>
