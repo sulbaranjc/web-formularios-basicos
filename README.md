@@ -1,46 +1,45 @@
+
 # Proyecto Web: Formularios Básicos
 
-Este proyecto tiene como objetivo enseñar a los alumnos de FP de primero en la materia de Lengua de Marca los principios básicos de un formulario web. A través de ejemplos prácticos, los estudiantes aprenderán a crear y validar formularios utilizando HTML, CSS y JavaScript.
+Este proyecto está orientado a la enseñanza de los principios fundamentales de los formularios web en HTML y CSS, dirigido a estudiantes de FP en la materia de Lenguajes de Marca. Incluye ejemplos prácticos y modernos, cada uno con su propio archivo de estilos para facilitar el aprendizaje y la personalización.
 
-## Estructura del Proyecto
-
-El proyecto está organizado de la siguiente manera:
+## Estructura del Proyecto (2026)
 
 ```
 web-formularios-basicos
 ├── src
 │   ├── css
-│   │   └── estilos.css          # Estilos CSS para la web
-│   ├── js
-│   │   └── main.js              # Lógica JavaScript para formularios
-│   ├── index.html               # Archivo principal HTML
+│   │   └── index.css                  # Estilos exclusivos para index.html
+│   ├── index.html                     # Página principal de navegación
 │   └── ejemplos
-│       ├── formulario-basico.html  # Ejemplo de formulario básico
-│       └── validacion-formulario.html # Ejemplo de formulario con validación
-├── README.md                    # Documentación del proyecto
+│       ├── formulario-basico.html     # Login profesional (con su CSS)
+│       ├── formulario-basico.css      # Estilos exclusivos para el login
+│       ├── inscripcion-gimnasio.html  # Formulario de inscripción (con su CSS)
+│       ├── inscripcion-gimnasio.css   # Estilos exclusivos para inscripción
+│       ├── tipos-inputs.html          # Ejemplo de todos los tipos de input (con su CSS)
+│       └── tipos-inputs.css           # Estilos exclusivos para tipos de input
+├── README.md                          # Documentación del proyecto
 ```
 
 ## Archivos Principales
 
-- **`src/css/estilos.css`**: Define la apariencia visual de los formularios y otros elementos de la página.
-  
-- **`src/js/main.js`**: Contiene la lógica para manejar la interacción del usuario y la validación de formularios.
+- **`src/css/index.css`**: Estilos exclusivos para la página principal (index.html).
+- **`src/index.html`**: Página de inicio y navegación entre ejemplos.
+- **`src/ejemplos/formulario-basico.html`** y **formulario-basico.css**: Login profesional, elegante y centrado.
+- **`src/ejemplos/inscripcion-gimnasio.html`** y **inscripcion-gimnasio.css**: Formulario completo de inscripción a gimnasio.
+- **`src/ejemplos/tipos-inputs.html`** y **tipos-inputs.css**: Demostración de todos los tipos de campos de formulario HTML.
 
-- **`src/index.html`**: Punto de entrada de la aplicación, enlaza los archivos CSS y JavaScript.
-
-- **`src/ejemplos/formulario-basico.html`**: Muestra un formulario básico con diferentes elementos como campos de texto y botones.
-
-- **`src/ejemplos/validacion-formulario.html`**: Presenta un formulario con reglas de validación para ilustrar cómo implementar validaciones.
+Cada ejemplo tiene su propio archivo CSS para evitar conflictos y facilitar la personalización.
 
 ## Cómo Usar
 
 1. Clona este repositorio en tu máquina local.
-2. Abre el archivo `index.html` en un navegador web para ver la aplicación en acción.
-3. Explora los ejemplos en la carpeta `ejemplos` para entender mejor cómo funcionan los formularios.
+2. Abre el archivo `src/index.html` en tu navegador web favorito.
+3. Navega entre los ejemplos desde la página principal.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor abre un issue o envía un pull request.
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, abre un issue o envía un pull request.
 
 ## Licencia
 
