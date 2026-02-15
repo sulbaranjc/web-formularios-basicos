@@ -1,39 +1,12 @@
-/* Reset básico y tipografía */
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f6f8fa;
-    color: #222;
-    margin: 0;
-    padding: 0;
-}
+/* Estilos exclusivos para tipos-inputs.html */
 
-main, .form-tipos-inputs {
+.form-tipos-inputs {
     max-width: 900px;
     margin: 40px auto;
     padding: 24px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-}
-
-h1, h2 {
-    color: #1a365d;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-form {
-    width: 100%;
-}
-
-.form-tipos-inputs {
     display: flex;
     flex-wrap: wrap;
     gap: 24px 32px;
@@ -58,20 +31,22 @@ form {
 .input-demo label {
     font-weight: 600;
     color: #1e293b;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.2em;
     display: block;
+    font-size: 0.98em;
 }
 .input-demo input,
 .input-demo select,
 .input-demo textarea {
     width: 100%;
-    padding: 0.6em 0.7em;
+    padding: 0.45em 0.6em;
     border-radius: 5px;
     border: 1px solid #bfc9d1;
-    font-size: 1em;
-    margin-bottom: 0.5em;
+    font-size: 0.97em;
+    margin-bottom: 0.35em;
     background: #fff;
     transition: border-color 0.2s;
+    box-sizing: border-box;
 }
 .input-demo input:focus,
 .input-demo select:focus,
@@ -82,8 +57,8 @@ form {
 .input-demo small {
     display: block;
     color: #64748b;
-    font-size: 0.97em;
-    margin-top: 0.2em;
+    font-size: 0.92em;
+    margin-top: 0.15em;
 }
 .input-tooltip {
     display: none;
@@ -156,7 +131,6 @@ form {
     background-color: #eab308;
     color: #222;
 }
-
 @media (max-width: 900px) {
     .form-tipos-inputs {
         flex-direction: column;
@@ -170,3 +144,6 @@ form {
 }
 @media (min-width: 1400px) {
     .form-tipos-inputs {
+        max-width: 1100px;
+    }
+}

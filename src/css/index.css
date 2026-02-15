@@ -1,0 +1,70 @@
+/* Estilos exclusivos para index.html */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2563eb;
+    color: #fff;
+    padding: 32px 0 18px 0;
+    text-align: center;
+    margin-bottom: 24px;
+}
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+nav ul li a:hover {
+    background: #1e293b;
+    color: #e0e7ef;
+}
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+h2 {
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 1em;
+    margin: 32px 0 0 0;
+    padding: 16px 0 0 0;
+}
